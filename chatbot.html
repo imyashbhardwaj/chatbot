@@ -1,0 +1,141 @@
+<head>
+<title>chatbot</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<Body>
+ 
+<center>
+<h1><u>&nbsp;Chatbot for Copyrights&nbsp;</u></h1>
+<br><br>
+This is a chat bot Created for answering queries related to Copyrights.<br>
+Source of queries:<a href=http://www.ssrana.in/Intellectual%20Property/Copyright/Copyright-FAQ-in-India.aspx>Click Here</a>
+</center>
+<br>
+<div class=chatbox>
+<div class=chatbox-head>
+&nbsp;<i class="fa fa-comment" aria-hidden="true"></i>&nbsp;Chatbox<button class="btn btn-info" alt="minimize" id=min><i class="fa fa-window-minimize" aria-hidden="true"></i></button>
+</div>
+<div class=chatbox-body>
+<div class=msgs>
+<div class="conv compResponse">
+<span class=textback>
+</span><br>
+</div>
+</div>
+<div id=query>
+<input id=msg placeholder="Type your query...."><button id=send onClick="send()" class="btn btn-success">Send</button>
+</div>
+</div>
+</div>
+
+</body>
+
+<style>
+#min{
+position:absolute;
+right:1;
+}
+.chatbox{
+position:absolute;
+bottom:0;
+right:5;
+width:25%;
+}
+.chatbox-head{
+background:rgb(150,150,255);
+border-style:solid;
+border-width:1px 1px 0px 1px;
+border-radius:5px 5px 0px 0px;
+border-color:black;
+color:white;
+}
+.chatbox-body{
+display:block;
+border-style:solid;
+border-width:1px;
+background:white;
+height:400px;
+overflow:scroll;
+}
+#query{
+position:absolute;
+bottom:0;
+margin-right:0px;
+}
+body{
+font-family:"Comic Sans MS";
+
+background-image: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+//background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+//background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+font-size:20px;
+}
+h1{
+color:red;
+text-shadow: 2px 2px grey;
+}
+
+.conv{
+margin:5px 5px 20px 5px ;
+
+}
+#msg{
+width:75%;
+}
+input{
+border-radius:5px;
+font-size:15px;
+height:30px;
+border-width:1px;
+border-style:black;
+border-color:black;
+}
+#send{
+width:24%;
+border-radius:5px;
+}
+.text{
+margin-top:20px;
+margin-left:5px;
+margin-right:5px;
+margin-bottom:5px;
+}
+.compResponse{
+text-align:left;
+}
+.userResponse{
+text-align:right;
+}
+.textback{
+//background:rgb(230,230,230);
+border-radius:10px;
+margin:5px;
+}
+.msgs{
+font-size:15px;
+}
+i{
+font-size:10px;
+font-color:black;
+}
+.fa-quote-left{
+color:green;
+}
+.fa-quote-right{
+color:rgb(50,200,200);
+}
+</style>
+
+<script  src="index.js"></script>
+
+
+
