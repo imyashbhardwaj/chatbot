@@ -65,12 +65,7 @@ function processResponse(err, response) {
     }
   }
 
-  // If we're not done, prompt for the next round of input.
-  //if (!endConversation) {
-    
-	
-  //}
-  
+   
 return; 
   }
 var newMessageFromUser = req.body.data;
